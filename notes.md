@@ -51,7 +51,13 @@
     > const LoginToken = "qwertyuio"
 
 
+## comma,ok || comma,error SYNTAX - 
+* Used in place of try-catch, as Go doesn't have the try-catch statements
+* SYNTAX -
 
+    > value, err := functionCall()
 
+    e.g. -
 
+    input, err := sum(2,4)
 
