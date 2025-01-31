@@ -79,6 +79,8 @@
 
     input, err := sum(2,4)
 
+* `Walrus Operator` `:=` is responsible for the comma,ok `syntax... 
+`
 ## Memory Management 
 
 * Go provides 2 methods, to allocate memory 
@@ -166,3 +168,36 @@
     > arr = append(arr[:i], arr[i+1:]...)
 
 * The `...` inside the parenthesis, denotes, the function will take multiple arguments
+
+## Maps
+
+* Syntax -
+
+    > <map_name> := make(map[<Key_data_type>]<value_data_type>)
+
+    e.g.,
+
+    > marks := make(map[string]int)
+
+* To delete a Key, use `delete` method as -
+
+    > delete(marks, "key_name")
+
+## Structs
+
+* Syntax -
+
+        type struct_name struct{
+            Var1 data_Type1
+            Var2 data_Type2
+            Var3 data_Type3
+        }
+
+    e.g.,
+
+        type User struct{
+            Name string
+            Email string
+            Age int
+        }
+
