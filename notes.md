@@ -201,3 +201,24 @@
             Age int
         }
 
+## Functions 
+
+* You can't define a function inside another function
+* *Function Signatures = What type of value a function takes and what type of value it returns*
+* Basic syntax -
+
+        func function_name(param1 dtype, param2 dtype) return type{
+            CODE
+        }
+
+* Syntax... to take multiple params -
+
+        func function_name(params ...dataType) (dtype1, dtype2){
+            CODE
+        }
+
+* For more details, check [Function in GO](14_functions/main.go)
+
+## Methods
+
+* For Methods, check [Methods in Go](15_methods/main.go)
