@@ -222,3 +222,11 @@
 ## Methods
 
 * For Methods, check [Methods in Go](15_methods/main.go)
+
+## Defer 
+
+* Any line with the `defer` keyword, goes into a stack, and is executed just before the *return* or *End of the function*
+* The deferred lines are executed in a LIFO manner... just like popping values from a stack
+* For more Details, check [Defer in Go](16_defer/main.go)
+
+> **IMPORTANT NOTE-** *Whenever you read or fetch data from a file or web... its always in Bytes format*
