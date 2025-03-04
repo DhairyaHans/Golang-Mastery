@@ -230,3 +230,9 @@
 * For more Details, check [Defer in Go](16_defer/main.go)
 
 > **IMPORTANT NOTE-** *Whenever you read or fetch data from a file or web... its always in Bytes format*
+
+> **IMPORTANT NOTE-** *For Info about JSONs, go to the folder - [BitMoreAboutJSON](21_bitMoreJSON)*
+
+## GO MOD 
+
+* 
