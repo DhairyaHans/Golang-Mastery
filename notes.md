@@ -235,4 +235,47 @@
 
 ## GO MOD 
 
-* 
+* To see all the dependencies, on which my module depends - 
+    ```
+    go list -m all
+    ```
+
+* To build the module and create an executable, 
+    ```
+    go build .
+    ```
+
+* To update the dependencies status (removes unnecessary dependencies also) in the go.mod file - 
+    ```
+    go mod tidy
+    ```
+
+* To verify the dependencies hashes present in the go.sum file, 
+    ```
+    go mod verify
+    ```
+
+* To check, what are the versions of a particular dependency,
+    ```
+    go list -m -versions github.com/gorilla/mux 
+    ```
+
+* To check, why I am dependent on a particular dependency or module
+    ```
+    go mod why github.com/gorilla/mux 
+    ```
+
+* To get the graph of all the dependencies,
+    ```
+    go mod graph
+    ```
+
+* To fetch the dependencies, inside the module folder, instead of fetching from the web pr cache 
+    ```
+    go mod vendor
+    ```
+
+* While running, if you want go to first check the vendor folder, if not found, then only fetch from web or cache -
+    ```
+    go run -mod=vendor main.go
+    ```
