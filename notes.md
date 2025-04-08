@@ -279,3 +279,26 @@
     ```
     go run -mod=vendor main.go
     ```
+
+## Go Routine
+
+* A `Go Routine` is like a thread, that runs the tasks in parallel
+* To run a command as a `Go Routine` use, `go` keyword at the start of the command, like
+    ```
+        go greeter("Hello")
+    ```
+    This will run the greeter() function as a Go Routine
+* We must wait for the thread/routine to return the result
+* We can use, `Wait Groups` for the same
+* For Reference, go to [Go Sync](https://pkg.go.dev/sync#WaitGroup)
+
+## IIFs (Immediately Invoked Functions)
+* The Anonymous Fuctions without any name, for one time use
+* Immediately Invoked
+* Syntax - 
+    ``` go
+        func([PARAMETERS]){
+            // function body
+        }([ARGUMENTS])
+    ```
+* Refer [26_mutexAndMutexGrp/main.go](26_mutexAndMutexGrp/main.go) for reference
